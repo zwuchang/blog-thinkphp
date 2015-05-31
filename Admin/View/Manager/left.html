@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>left</title>
+	<link rel="stylesheet" href="{$smarty.const.ADMIN_SITE_SOURCE_URL}css/admin.css">
+	<script src='{$smarty.const.ADMIN_SITE_SOURCE_URL}js/jquery-1.11.1.js'></script>
+	<script src='{$smarty.const.ADMIN_SITE_SOURCE_URL}js/admin.js'></script>
+	
+</head>
+<body>
+
+<div>
+	<div class="manage">
+		<span>管理菜单</span>
+	</div>
+	<div class="m_zone">
+		<div class="title">
+			<span>文章中心</span>
+		</div>
+		<div class="content">
+			<ul>
+				<li>
+					<div class='c_tit'><a target='information' href='{$smarty.const.__MODULE__}/Article/ArticlePublish'>发表文章</a></div>
+				</li>
+				
+				<li>
+					<div class='c_tit'><a target='information' href='{$smarty.const.__MODULE__}/Article/ArticleList'>文章列表</a></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="m_zone">
+		<div class="title">
+			<span>留言中心</span>
+		</div>
+		<div class="content">
+			<ul>
+				<li>
+					<div class='c_tit'><a target='information' href='{$smarty.const.__MODULE__}/Messages/MessagePublish'>发表留言</a></div>
+				</li>
+				<li>
+					<div class='c_tit'><a target='information' href='{$smarty.const.__MODULE__}/Messages/MessageList'>留言列表</a></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+		<div class="m_zone">
+		<div class="title">
+			<span>评论中心</span>
+		</div>
+		<div class="content">
+			<ul>
+				<li>
+					<div class='c_tit'><a href='#'>发表评论</a></div>
+				</li>
+				<li>
+					<div class='c_tit'><a href='#'>评论列表</a></div>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+	
+	<div class="m_zone">
+		<div class="title">
+			<span>回收站</span>
+		</div>
+		<div class="content">
+			<ul>
+				<li>
+					<div class='c_tit'><a target='information' href='{$smarty.const.__MODULE__}/Trash/RemoveArticle'>已删文章</a></div>
+				</li>
+				<li>
+					<div class='c_tit'><a target='information' href='{$smarty.const.__MODULE__}/Trash/RemoveMessage'>已删留言</a></div>
+				</li>
+				<li>
+					<div class='c_tit'><a href='#'>已删评论</a></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	<div class="m_zone">
+		<div class="title">
+			<span>系统管理</span>
+		</div>
+		<div class="content">
+			<ul>
+				<li>
+					<div class='c_tit'><a href='#'>服务器状态</a></div>
+				</li>
+				<li>
+					<div class='c_tit'><a href='#'>系统设置</a></div>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+	
+	<!-- 版本 -->
+	<div class='footer'>
+		<span>版本v1.0 2015.5.15</span>
+	</div>
+</div>
+</body>
+</html>

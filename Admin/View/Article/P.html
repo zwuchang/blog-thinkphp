@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>文章列表</title>
+<link rel="stylesheet" href="{$smarty.const.ADMIN_SITE_SOURCE_URL}css/admin.css">
+<script src='{$smarty.const.ADMIN_SITE_SOURCE_URL}js/jquery-1.11.1.js'></script>
+<script src='{$smarty.const.ADMIN_SITE_SOURCE_URL}js/ueditor/ueditor.all.js'></script>
+<script src='{$smarty.const.ADMIN_SITE_SOURCE_URL}js/ueditor/ueditor.config.js'></script>
+<script src='{$smarty.const.ADMIN_SITE_SOURCE_URL}js/admin.js'></script>
+
+{literal}
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.STYLE1 {font-size: 12px}
+.STYLE3 {font-size: 12px; font-weight: bold; }
+.STYLE4 {
+	color: #03515d;
+	font-size: 12px;
+}
+-->
+</style>
+{/literal}
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="30" background="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/tab/tab_05.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="12" height="30"><img src="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/tab/tab_03.gif" width="12" height="30" /></td>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="46%" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="5%"><div align="center"><img src="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/tab/tb.gif" width="16" height="16" /></div></td>
+                <td width="95%" class="STYLE1"><span class="STYLE3">你当前的位置</span>：[文章中心]-[发表文章]</td>
+              </tr>
+            </table></td>
+            <td width="54%"><table border="0" align="right" cellpadding="0" cellspacing="0">
+             
+            </table></td>
+          </tr>
+        </table></td>
+        <td width="16"><img src="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/tab/tab_07.gif" width="16" height="30" /></td>
+      </tr>
+    </table></td>
+  </tr>
+ 
+  <tr>
+    <td><table width="97%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="8" background="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/tab/tab_12.gif">&nbsp;</td>
+        <td><table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="b5d6e6" >
+        <!----发表文章开始 --->
+	<div class='publish'>	
+			<form action='{$smarty.const.__MODULE__}/Article/ArticlePublish' method='post'>
+				<div>文章标题：<input type="text" class='changeinputwidth' name="title" id=""></div>
+				<script type="text/plain" id="editor" name="content"></script>
+				<div><input type="submit" value="发表" name='publish'></div>
+			</form>
+	</div>
+		  <!----发表文章end --->
+        </table></td>
+        <td width="8" background="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/tab/tab_15.gif">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="35" background="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/tab/tab_19.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="12" height="35"><img src="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/tab/tab_18.gif" width="12" height="35" /></td>
+       
+        
+      </tr>
+    </table></td>
+  </tr>
+</table>
+
+</body>
+</html>

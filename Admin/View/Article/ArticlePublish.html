@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>添加文章</title>
+	<link rel="stylesheet" href="{$smarty.const.ADMIN_SITE_SOURCE_URL}css/admin.css">
+	<script src='{$smarty.const.ADMIN_SITE_SOURCE_URL}js/jquery-1.11.1.js'></script>
+	<script src='{$smarty.const.ADMIN_SITE_SOURCE_URL}js/admin.js'></script>
+	<script src='{$smarty.const.ADMIN_SITE_SOURCE_URL}js/ueditor/ueditor.all.js'></script>
+	<script src='{$smarty.const.ADMIN_SITE_SOURCE_URL}js/ueditor/ueditor.config.js'></script>
+</head>
+<body>
+		
+	<div class='publish'>
+		<div class='publish_t'>
+			<div class='left'></div>
+			<div class='center'>你当前的位置：[文章中心]-[发表文章]</div>
+			<div class='right'></div>
+		</div>
+		<div class='publish_c'>
+		
+			<form action='{$smarty.const.__MODULE__}/Article/ArticlePublish' method='post'>
+				<div>文章标题：<input type="text" class='changeinputwidth' name="title" id=""></div>
+				<script type="text/plain" id="editor" name="content"></script>
+				<div><input type="submit" value="发表" name='publish'></div>
+			</form>
+			
+		</div>
+		
+		
+	</div>
+</body>
+</html>

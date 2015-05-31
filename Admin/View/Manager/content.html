@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>单篇内容</title>
+</head>
+<style>
+	.single_content .title h3{
+		padding:0px;
+		margin:0px;
+	}
+	.single_content .author_info{
+		padding-top:5px;
+		font-style:italic;
+		font-size:14px;
+		color:#999;
+		margin:0;
+		padding-bottom:20px;
+	}
+	
+	.single_content .content{
+		font-size:15px;
+		word-break:break-all
+	}
+</style>
+<body>
+	
+	<div class='single_content'>
+		<div class='title'><h3>{$info.title}</h3></div>
+		<div class='author_info'>作者：Mr Yang 发表时间：{$info.dates}, 点击量：{$info.hits}</div>
+		<div class='content'>{$info.content}</div>
+		
+	</div>
+	
+</body>
+</html>

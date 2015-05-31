@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>login</title>
+	<link rel="stylesheet" href="{$smarty.const.ADMIN_SITE_SOURCE_URL}css/admin.css">
+	<script src='{$smarty.const.ADMIN_SITE_SOURCE_URL}js/jquery-1.11.1.js'></script>
+	<script src='{$smarty.const.ADMIN_SITE_SOURCE_URL}js/admin.js'></script>
+	
+</head>
+<body class='login_body'>
+	<div class='login_wrap'>
+		<form action="{$smarty.const.__MODULE__}/Manager/login" method='post'>
+		<div class='login_head'>
+		</div>
+		<div class='login_cont'>
+			<div class='login_cont_left'></div>
+			<div class='login_cont_center'>
+				<div>用户名：<input type="text" name="username" id=""></div>
+				<div>密&nbsp;码：<input type="text" name="password" id=""></div>
+				<div>
+					验证码：<input type type='password' name='verify' >
+				</div>
+			</div>
+			<div class='login_cont_right'>
+				
+			</div>
+			
+		</div>
+		<div class='login_foot'>
+			<div><input type='submit' value='' /></div>
+		</div>
+		<div class='login_verify'>
+			<img id='login_verify_img' src='{$smarty.const.__MODULE__}/Manager/verifyImg' alt='刷新重试'>
+		</div>	
+		
+		</form>
+	</div>
+	
+</body>
+</html>

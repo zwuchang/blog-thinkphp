@@ -1,0 +1,158 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>top</title>
+<link rel="stylesheet" href="{$smarty.const.ADMIN_SITE_SOURCE_URL}css/admin.css">
+<script src='{$smarty.const.ADMIN_SITE_SOURCE_URL}js/jquery-1.11.1.js'></script>
+<script src='{$smarty.const.ADMIN_SITE_SOURCE_URL}js/admin.js'></script>
+{literal}
+<style type="text/css">
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+a{
+  text-decoration: none;
+}
+.STYLE1 {
+	font-size: 12px;
+	color: #FFFFFF;
+}
+.STYLE2 {font-size: 9px}
+.STYLE3 ,a{
+	color: #033d61;
+	font-size: 12px;
+}
+{/literal}
+</style>
+</head>
+
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="70" background="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/main_05.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td height="24"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="270" height="24" background="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/main_03.gif">&nbsp;</td>
+            <td width="505" background="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/main_04.gif">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td width="21"><img src="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/main_07.gif" width="21" height="24"></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="38"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="270" height="38" background="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/main_09.gif">&nbsp;</td>
+            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="77%" height="25" valign="bottom"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="50" height="19"><div align="center"><img class='homepage' src="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/main_12.gif" width="49" height="19"></div></td>
+                    <td width="50"><div align="center"><a href='javascript:history.go(-1);'><img src="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/main_14.gif" width="48" height="19"></a></div></td>
+                    <td width="50"><div align="center"><a href='javascript:history.go(1)'><img src="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/main_16.gif" width="48" height="19"></a></div></td>
+                    <td width="50"><div align="center"><img class='homepage' src="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/main_18.gif" width="48" height="19"></div></td>
+                    <td width="50"><div align="center"><a href="{$smarty.const.__MODULE__}/Manager/logOut"><img class='top_logout' src="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/main_20.gif" width="48" height="19"></a></div></td>
+                    <td width="26"><div align="center"><img src="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/main_21.gif" width="26" height="19"></div></td>
+                    <td width="100"><div align="center"><a target='information' href='{$smarty.const.__MODULE__}/User/changeUserInfo'><img src="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/main_22.gif" width="98" height="19"></a></div></td>
+                    <td>&nbsp;</td>
+                  </tr>
+                </table></td>
+                <td width="420" valign="bottom"  nowrap="nowrap"><div align="right"><span class="STYLE1">■ <span class="STYLE1">现在是：<span id="top_change_time"></span></span></span>
+              </div></td>
+              </tr>
+            </table></td>
+            <td width="21"><img src="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/main_11.gif" width="21" height="38"></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="8" style=" line-height:8px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="270" background="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/main_29.gif" style=" line-height:8px;">&nbsp;</td>
+            <td width="505" background="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/main_30.gif" style=" line-height:8px;">&nbsp;</td>
+            <td style=" line-height:8px;">&nbsp;</td>
+            <td width="21" style=" line-height:8px;"><img src="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/main_31.gif" width="21" height="8"></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="28" background="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/main_36.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="177" height="28" background="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/main_32.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="20%"  height="22">&nbsp;</td>
+            <td width="59%" valign="bottom"><div align="center" class="STYLE1">当前用户：{$smarty.session.username}</div></td>
+            <td width="21%">&nbsp;</td>
+          </tr>
+        </table></td>
+        <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="65" height="28"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="23" valign="bottom"><table width="58" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr> 
+                    <td height="20" style="cursor:hand" onMouseOver="this.style.backgroundImage='url({$smarty.const.ADMIN_SITE_SOURCE_URL}img/bg.gif)';this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#a6d0e7'; "onmouseout="this.style.backgroundImage='url({$smarty.const.ADMIN_SITE_SOURCE_URL}img/tab/bg.gif)';this.style.borderStyle='none'"> <div align="center" class="STYLE3">业务中心</div></td>
+                  </tr>
+                </table></td>
+              </tr>
+            </table></td>
+            <td width="3"><img src="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/main_34.gif" width="3" height="28"></td>
+            <td width="63"><table width="58" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td height="20" style="cursor:hand" onMouseOver="this.style.backgroundImage='url({$smarty.const.ADMIN_SITE_SOURCE_URL}img/bg.gif)';this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#a6d0e7'; "onmouseout="this.style.backgroundImage='url({$smarty.const.ADMIN_SITE_SOURCE_URL}img/tab/bg.gif)';this.style.borderStyle='none'"><div align="center" class="STYLE3">系统管理</div></td>
+              </tr>
+            </table></td>
+            <td width="3"><img src="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/main_34.gif" width="3" height="28"></td>
+            <td width="63"><table width="58" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td height="20" style="cursor:hand" onMouseOver="this.style.backgroundImage='url({$smarty.const.ADMIN_SITE_SOURCE_URL}img/bg.gif)';this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#a6d0e7'; "onmouseout="this.style.backgroundImage='url({$smarty.const.ADMIN_SITE_SOURCE_URL}img/tab/bg.gif)';this.style.borderStyle='none'"><div align="center" class="STYLE3"><a class='tongxunlu' href='{$smarty.const.__MODULE__}/Person/PersonList' target='information'>通讯录</a></div></td>
+              </tr>
+            </table></td>
+            <td width="3"><img src="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/main_34.gif" width="3" height="28"></td>
+            <td width="63"><table width="58" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td height="20" style="cursor:hand" onMouseOver="this.style.backgroundImage='url({$smarty.const.ADMIN_SITE_SOURCE_URL}img/bg.gif)';this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#a6d0e7'; "onmouseout="this.style.backgroundImage='url({$smarty.const.ADMIN_SITE_SOURCE_URL}img/tab/bg.gif)';this.style.borderStyle='none'"><div align="center" class="STYLE3">数据管理</div></td>
+              </tr>
+            </table></td>
+            <td width="3"><img src="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/main_34.gif" width="3" height="28"></td>
+            <td width="63"><table width="58" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td height="20" style="cursor:hand" onMouseOver="this.style.backgroundImage='url({$smarty.const.ADMIN_SITE_SOURCE_URL}img/bg.gif)';this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#a6d0e7'; "onmouseout="this.style.backgroundImage='url({$smarty.const.ADMIN_SITE_SOURCE_URL}img/tab/bg.gif)';this.style.borderStyle='none'"><div align="center" class="STYLE3">统计报表</div></td>
+              </tr>
+            </table></td>
+            <td width="3"><img src="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/main_34.gif" width="3" height="28"></td>
+            <td width="63"><table width="58" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td height="20" style="cursor:hand" onMouseOver="this.style.backgroundImage='url({$smarty.const.ADMIN_SITE_SOURCE_URL}img/bg.gif)';this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#a6d0e7'; "onmouseout="this.style.backgroundImage='url({$smarty.const.ADMIN_SITE_SOURCE_URL}img/tab/bg.gif)';this.style.borderStyle='none'"><div align="center" class="STYLE3">业务管理</div></td>
+              </tr>
+            </table></td>
+            <td width="3"><img src="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/main_34.gif" width="3" height="28"></td>
+            <td width="63"><table width="58" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td height="20" style="cursor:hand" onMouseOver="this.style.backgroundImage='url({$smarty.const.ADMIN_SITE_SOURCE_URL}img/bg.gif)';this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#a6d0e7'; "onmouseout="this.style.backgroundImage='url({$smarty.const.ADMIN_SITE_SOURCE_URL}img/tab/bg.gif)';this.style.borderStyle='none'"><div align="center" class="STYLE3">系统配置</div></td>
+              </tr>
+            </table></td>
+            <td width="3"><img src="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/main_34.gif" width="3" height="28"></td>
+            <td width="63"><table width="58" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td height="20" style="cursor:hand" onMouseOver="this.style.backgroundImage='url({$smarty.const.ADMIN_SITE_SOURCE_URL}img/bg.gif)';this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#a6d0e7'; "onmouseout="this.style.backgroundImage='url({$smarty.const.ADMIN_SITE_SOURCE_URL}img/tab/bg.gif)';this.style.borderStyle='none'"><div align="center" class="STYLE3">升级维护</div></td>
+              </tr>
+            </table></td>
+            <td>&nbsp;</td>
+          </tr>
+        </table></td>
+        <td width="21"><img src="{$smarty.const.ADMIN_SITE_SOURCE_URL}img/main_37.gif" width="21" height="28"></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<script>clock();</script>
+</body>
+</html>
